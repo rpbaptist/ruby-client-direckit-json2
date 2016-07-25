@@ -1,5 +1,5 @@
 # ruby-client-direckit-json2
-Examples in Ruby calling DirectKit JSON2
+Examples in Ruby on Rails calling DirectKit JSON2
 
 * Register a Payer Wallet (RegisterWallet)
 * Register a Receiver Wallet (RegisterWallet)
