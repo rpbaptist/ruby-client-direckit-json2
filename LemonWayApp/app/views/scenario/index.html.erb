@@ -1,0 +1,163 @@
+<h1>Ruby on Rails + Lemon Way API (JSON2)</h1>
+<h2>Common Scenario</h2>
+<ol>
+	<h3><li>Register a Payer Wallet (RegisterWallet)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqRegisterPayerWallet %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawRegisterPayerWallet %></p>
+		<h4>Result</h4>
+		<p><%= @resultRegisterPayerWallet %></p>
+	</div>
+
+	<h3><li>Get the details of Payer Wallet by ID (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsPayerWallet %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsPayerWallet %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsPayerWallet %></p>
+	</div>
+
+	<h3><li>Register a Receiver Wallet (RegisterWallet)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqRegisterReceiverWallet %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawRegisterReceiverWallet %></p>
+		<h4>Result</h4>
+		<p><%= @resultRegisterReceiverWallet %></p>
+	</div>
+
+	<h3><li>Get the details of Receiver Wallet by email (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsReceiverWallet %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsReceiverWallet %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsReceiverWallet %></p>
+	</div>
+
+	<h3><li>Update email for Receiver Wallet (UpdateWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqUpdateWalletDetails %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawUpdateWalletDetails %></p>
+		<h4>Result</h4>
+		<p><%= @resultUpdateWalletDetails %></p>
+	</div>
+
+	<h3><li>Receiver Wallet with the new email (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsUpdated %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsUpdated %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsUpdated %></p>
+	</div>
+
+	<h3><li>Register a card for Payer Wallet (RegisterCard)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqRegisterCard %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawRegisterCard %></p>
+		<h4>Result</h4>
+		<p><%= @resultRegisterCard %></p>
+	</div>
+
+	<h3><li>Pay with the registered card <%= @cardId %> into Payer Wallet (MoneyInWithCardId)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqMoneyInWithCardId %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawMoneyInWithCardId %></p>
+		<h4>Result</h4>
+		<p><%= @resultMoneyInWithCardId %></p>
+	</div>
+
+	<h3><li>Payer Wallet after the payment with card: 100.00 - 10.00 = 90.00 (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsPayerWalletCredited %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsPayerWalletCredited %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsPayerWalletCredited %></p>
+	</div>
+
+	<h3><li>Payer send 10.00 to Receiver (SendPayment)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqSendPayment %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawSendPayment %></p>
+		<h4>Result</h4>
+		<p><%= @resultSendPayment %></p>
+	</div>
+
+	<h3><li>Payer Wallet after the transaction: 80.00 (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsPayerDebited %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsPayerDebited %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsPayerDebited %></p>
+	</div>
+
+	<h3><li>Receiver Wallet after the transaction: 10.00 (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsReceiverCredited %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsReceiverCredited %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsReceiverCredited %></p>
+	</div>
+
+	<h3><li>Receiver register an IBAN (RegisterIBAN)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqRegisterIban %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawRegisterIban %></p>
+		<h4>Result</h4>
+		<p><%= @resultRegisterIban %></p>
+	</div>
+
+	<h3><li>Receiver Wallet with an IBAN registered (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsReceiverIban %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsReceiverIban %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsReceiverIban %></p>
+	</div>
+
+	<h3><li>Receiver do a Money Out with the registered IBAN <%= @ibanId %> (MoneyOut)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqMoneyOut %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawMoneyOut %></p>
+		<h4>Result</h4>
+		<p><%= @resultMoneyOut %></p>
+	</div>
+
+	<h3><li>Receiver Wallet after the Money Out: 0.00 (GetWalletDetails)</li></h3>
+	<div>
+		<h4>Request</h4>
+		<p><%= @reqGetWalletDetailsReceiverDebited %></p>
+		<h4>Raw response</h4>
+		<p><%= @rawGetWalletDetailsReceiverDebited %></p>
+		<h4>Result</h4>
+		<p><%= @resultGetWalletDetailsReceiverDebited %></p>
+	</div>
+</ol>
