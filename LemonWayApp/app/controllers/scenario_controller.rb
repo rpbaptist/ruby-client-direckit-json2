@@ -3,7 +3,7 @@ class ScenarioController < ApplicationController
     require 'json'
     require 'securerandom'
 
-  	DIRECKIT_URL 	= "https://sandbox-api.lemonway.fr/mb/dat/dev/directkitjson2/Service.asmx"
+  	DIRECKIT_URL 	= "https://sandbox-api.lemonway.fr/mb/demo/dev/directkitjson2/Service.asmx"
   	LOGIN 			= "society"
   	PASSWORD 		= "123456"
   	LANGUAGE 		= "en"
