@@ -67,7 +67,7 @@ class ScenarioController < ApplicationController
 			:cardType 	=> "1",
 			:cardNumber => "5017670000006700",
 			:cardCode 	=> "123",
-			:cardDate 	=> "12/2016"
+			:cardDate 	=> "12/2019"
 		}
 		@rawRegisterCard 	= registerCard(@reqRegisterCard)
 		@resultRegisterCard	= handleResponse(@rawRegisterCard, "CARD").html_safe
